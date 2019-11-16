@@ -8,7 +8,7 @@ exports.handler = async (event) => {
   }).then((resp) => {
     const response = {"isBase64Encoded": false,
                     "statusCode": 200,
-                    "headers": { "headerName": "headerValue" }
+                    "headers": { "Access-Control-Allow-Origin": "*" }
                     };
     response.body = JSON.stringify(resp);
     return response;
